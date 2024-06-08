@@ -1,3 +1,83 @@
 body{
     font-family: Vazirmatn;
 }
+
+.custom-button{
+    border: none;
+}
+.custom-button:hover{
+    background-color: #F7F7F8;
+}
+
+.closeButton{
+    position: relative;
+    right: 90%;
+}
+.closeButton:hover{
+    background-color: #F7F7F8;
+
+}
+
+.custom-input{
+    border: none;
+    background-color: #F7F7F8;
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #F7F7F8;
+
+  }
+.fontsize {
+    font-size: 14px;
+    border: none;
+  }
+  
+  .fontsize:hover {
+    background-color: #F7F7F8;
+  }
+  
+  .fontsizeOnClick {
+    font-weight: bold;
+    background-color: #f1efef;
+  }
+
+
+  .cinema{
+    font-size: 12px;
+    margin: 4px;
+  }
+
+  .cinema:hover{
+    border-radius: 45px;
+    color: #ff4955;
+    background-color: #fff7f8;
+  }
+
+  .custom-scrollbar {
+    max-height: 300px; /* تنظیم حداکثر ارتفاع برای ناحیه اسکرول */
+    overflow-y: auto; /* فعال کردن اسکرول عمودی */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 12px; /* عرض اسکرول بار */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* رنگ زمینه اسکرول بار */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888; /* رنگ نوار اسکرول */
+    border-radius: 10px; /* گرد کردن گوشه‌ها */
+    border: 3px solid #f1f1f1; /* ایجاد فضای داخلی در اطراف نوار اسکرول */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* رنگ نوار اسکرول در حالت هاور */
+  }
+
+
+
+  
