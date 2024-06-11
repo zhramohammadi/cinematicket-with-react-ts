@@ -13,9 +13,9 @@ function Login(){
     function handleRegisterPage(){
         navigate('/register')
     }
-    
-    function handleForgetNumberPage(){
-        navigate('/forgetNumber')
+
+    function handleForgetPasswordPage(){
+        navigate('/forget-password')
     }
 
 
@@ -23,7 +23,7 @@ function Login(){
         <>
             <Container style={{width:'45%'}} >
                 <Row className=" mt-5 text-end">
-                    <Col>
+                    <Col size='lg'>
                         <div className="text-center mt-5">
                              <img width={100} className="mx-1" sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt="" />
                              <img width={25} sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/logo.svg" alt="" />
@@ -51,8 +51,8 @@ function Login(){
                                          <Button onClick={handleHomePage} variant="secondary" className="px-5 d-flex justify-content-end " style={{position:"absolute"}}>ورود
                                             <Link to={'/'}></Link>
                                          </Button>
-                                         <Button onClick={handleForgetNumberPage} size="sm" variant="" className="cinema mt-2" style={{position:"absolute"}}>فراموش کردید؟|
-                                            <Link to={'/forgetNumber'}></Link>
+                                         <Button onClick={handleForgetPasswordPage} size="sm" variant="" className="cinema mt-2" style={{position:"absolute"}}>فراموش کردید؟|
+                                            <Link to={'/forget-password'}></Link>
                                          </Button>
                                         <FormControl className="d-inline custom-input p-2 " dir="rtl" style={{ width: "42%",height:'45px' }} type="text" placeholder="شماره موبایل..."/>
                                     </Form.Group>
