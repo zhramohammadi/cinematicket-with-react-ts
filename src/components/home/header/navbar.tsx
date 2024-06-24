@@ -47,6 +47,7 @@ function Navbar (){
 
     return(
         <>
+        
              <NavbarBs className="border-bottom ">
             <Container fluid>
                 <Nav className="mx-4 "dir="ltr">

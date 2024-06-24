@@ -23,9 +23,9 @@ function Register(){
                              <img width={100} className="mx-1" sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt="" />
                              <img width={25} sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/logo.svg" alt="" />
                     </div>
-                     <div className="d-flex justify-content-end ">
+                     <div className="d-inline p-1 bg-white">
                              <Button onClick={handleLoginPage} variant="">بازگشت
-                             <TfiBackRight className="mx-1"/>
+                             <TfiBackRight className="mx-1 bg-white"/>
                              <Link to={'/login'}></Link>
                              </Button>
                     </div>

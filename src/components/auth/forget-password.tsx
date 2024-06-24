@@ -1,11 +1,20 @@
 
-
+import { useState } from "react";
 import {Link, useNavigate } from "react-router-dom";
 import { Button,Container,Col,Row,Form, FormControl } from "react-bootstrap";
 import { TfiBackRight } from "react-icons/tfi";
 
 function ForgetPassword(){
+
+    const[click,setClick]= useState('شماره موبایل');
+    const[placeHolder,setplaceHolder]=useState('شماره موبایل...');
     const navigate =useNavigate();
+    
+    const handleClick = (type:string) => {
+        setClick(type);
+        setplaceHolder(type === 'ایمیل' ? 'ایمیل...' : 'شماره موبایل...');
+    };
+
     function handleLoginPasswordPage(){
         navigate('/login-password')
     }
@@ -14,7 +23,7 @@ function ForgetPassword(){
     }
     return(
         <>
-        <Container style={{width: '45%'}}>
+        <Container style={{width: '43%'}}>
             <Row className="mt-5 text-end">
                 <Col>
                 <div className="text-center mt-5">
@@ -35,14 +44,15 @@ function ForgetPassword(){
                         </h6>
 
                         <div className="mt-4">
-                            <Button variant="none" className="col-6" size="sm">ایمیل </Button>
-                            <Button variant="none" className="col-6" size="sm">شماره موبایل</Button>
-                            <hr className=" text-muted"/>
+                            <Button   onClick={()=>handleClick('ایمیل')} variant="none" className={`col-6 custom-button ${click === 'ایمیل' ? 'click' : ''}`} size="sm">ایمیل </Button>
+                            <Button variant="none" onClick={()=>handleClick('شماره موبایل')} className={`col-6 custom-button ${click === 'شماره موبایل' ? 'click' : ''}`}  size="sm">شماره موبایل</Button>
+                            
                         </div>
 
                         <Form className="mt-3">
                             <Form.Group>
-                                <FormControl className="d-inline custom-input p-2 col-12" type="text" placeholder="شماره موبایل  ..."/>
+                                <FormControl dir="rtl" className=" custom-input p-2 col-12" type="text" placeholder={placeHolder}/>
+                                
                             </Form.Group>
                          </Form>
                          <Button onClick={handleVerifyPage} variant="secondary" className=" mt-5 col-12">بازیابی اطلاعات حساب</Button>

@@ -19,7 +19,7 @@ function LoginPassword(){
 
     return(
         <>
-            <Container style={{width: '45%'}}>
+            <Container style={{width: '43%'}}>
                 <Row  className="mt-5 text-end">
                     <Col>
                     <div className="text-center mt-5">

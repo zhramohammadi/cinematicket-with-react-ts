@@ -1,4 +1,4 @@
-body{
+*{
     font-family: Vazirmatn;
 }
 
@@ -56,28 +56,35 @@ body{
   }
 
   .custom-scrollbar {
-    max-height: 300px; /* تنظیم حداکثر ارتفاع برای ناحیه اسکرول */
-    overflow-y: auto; /* فعال کردن اسکرول عمودی */
+    max-height: 300px;
+    overflow-y: auto; 
   }
   
   .custom-scrollbar::-webkit-scrollbar {
-    width: 12px; /* عرض اسکرول بار */
+    width: 12px;
   }
   
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #f1f1f1; /* رنگ زمینه اسکرول بار */
+    background: #f1f1f1;
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #888; /* رنگ نوار اسکرول */
-    border-radius: 10px; /* گرد کردن گوشه‌ها */
-    border: 3px solid #f1f1f1; /* ایجاد فضای داخلی در اطراف نوار اسکرول */
+    background-color: #888; 
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; 
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #555; /* رنگ نوار اسکرول در حالت هاور */
+    background: #555; 
   }
 
 
 
   
+.click{
+  border-bottom: 2px solid red;
+}
+.click:hover{
+  border-bottom: 2px solid red;
+  background-color: #f7f7f8;
+}
