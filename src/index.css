@@ -88,3 +88,50 @@
   border-bottom: 2px solid red;
   background-color: #f7f7f8;
 }
+
+.carousel-images-left{
+  position: absolute;
+  width: 350px;
+  height: 403px;
+}
+
+.carousel-images-right{
+  position: absolute;
+  width: 320px;
+  height: 400px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.Description{
+  background-color: #ff18185b;
+  color: white;
+  padding: 3px;
+  border-radius: 7px;
+  margin: 2px;
+  font-size: 12px;
+}
+.DescriptionTime{
+  background-color: #322c2c5b;
+  color: white;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+@media (max-width: 760px) {
+    .custom-width {
+        width:100%;
+    }
+}
+
+@media (max-width: 578px) {
+    .custom-width {
+        position: absolute;
+        top: 10%;
+    }
+    .custom-width-input{
+      width: 80%;
+    }
+}

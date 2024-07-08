@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Navbar as NavbarBs,Nav,Button,ButtonGroup , Container, Modal,Form,Row,Col } from "react-bootstrap";
+import { Navbar as NavbarBs,Nav,Button,ButtonGroup , Container, Modal,Form,Row,Col, NavbarToggle, NavbarCollapse, NavbarBrand } from "react-bootstrap";
 import { cityList } from "../../data/city";
 import { CiUser } from "react-icons/ci";
 import { TfiTicket } from "react-icons/tfi";
@@ -50,22 +50,23 @@ function Navbar (){
         
              <NavbarBs className="border-bottom ">
             <Container fluid>
-                <Nav className="mx-4 "dir="ltr">
-                    <Button onClick={handleLoginPage} size="sm" className="text-muted  custom-button" variant="btn outline-secondary">
+                <Nav className="mx-1 "dir="ltr">
+                    <Button onClick={handleLoginPage} size="sm" className="text-muted  custom-button d-md-block d-none" variant="btn outline-secondary">
                         ورود یا ثبت نام
                      <Link to='/login'></Link>
-                     <CiUser className="m-2" />
+                     <CiUser />
                     </Button>
                     <Button size="sm" className="text-muted  custom-button" variant="btn outline-secondary">
                         بلیط های من 
-                        <TfiTicket className="m-2" />
+                        <TfiTicket  />
                     </Button>
                 <NavbarBs.Collapse>
-                    <Button onClick={handleShow} size="sm" className="text-muted  custom-button" variant="btn outline-secondary">
-                    <IoIosArrowDown className="m-1"/>
+                    <Button onClick={handleShow} size="sm" className="text-muted  custom-button  d-md-block d-none" variant="btn outline-secondary">
+                    <IoIosArrowDown />
                          {selectedCityName}
-                        <TfiLocationPin  className="m-2"/>
+                        <TfiLocationPin />
                     </Button>
+                    <TfiLocationPin onClick={handleShow}  className="m-2 d-md-none d-lg-none d-sm-block "/>
                 </NavbarBs.Collapse>
                 <Modal show={showModal} onHide={handleCloseModal} dir='rtl' size="lg" className="mt-5">
                     <Modal.Header>
@@ -78,7 +79,7 @@ function Navbar (){
                        </Form>
                     </Modal.Header>
                     <Modal.Body className="custom-scrollbar mx-4" >
-                    <Row xl={4} lg={3} md={2} sm={1}>
+                    <Row xl={4} lg={3} md={2} sm={1} xs={1}>
                      {filteredCity.map((city) => (
                          <Col onClick={()=>handleCity(city.title)} className="mt-2  custom-button text-muted" key={city.id}>{city.title}</Col>
                         ))}
@@ -94,28 +95,28 @@ function Navbar (){
                     </Modal.Footer>
                 </Modal >
                 </Nav>
-                <Nav className="mx-4 mt-1" dir="rtl">
-                    <Button variant="">
-                        <img width={25} className="" sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/logo.svg" alt="" />
-                        <img width={100} className="mx-1" sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt="" />
+                <Nav className=" mt-1" dir="rtl">
+                    <Button variant="" >
+                        <img width={17}  src="https://cinematicket.org/v3.30.13/assets/images/logo.svg" alt="" />
+                        <img width={70}  sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt="" />
                     </Button>
-                    <Button variant=""  className="cinema">
-                    <BsPlayCircle className="mx-1"/>
+                    <Button variant=""  className="cinema  d-md-block d-none">
+                    <BsPlayCircle />
                         سینما
                     </Button>
-                        <Form className="mx-2 mt-1">
+                        <Form className="mt-1  d-md-block d-none">
                             <Form.Group>
-                            <Form.Control value={searchText} onChange={(e) => setSearchText(e.target.value)} style={{ width: "110%" }} className=" custom-input "  type="search" placeholder="جستجوی فیلم.سینما کارگردان.بازیگر و..."></Form.Control> 
+                            <Form.Control value={searchText} onChange={(e) => setSearchText(e.target.value)} style={{ width: "100%" }} className=" custom-input "  type="search" placeholder="جستجوی فیلم.سینما کارگردان.بازیگر و..."></Form.Control> 
                             </Form.Group>
                        </Form>
                 </Nav> 
             </Container>
              </NavbarBs>
  
-        <NavbarBs className="mx-5 " dir="rtl">
-        <ButtonGroup>
+        <NavbarBs className="mx-5" dir="rtl">
+        <ButtonGroup >
            {buttons.map((buttonText, index) => (
-         <Button key={index} variant="" className={`fontsize ${activeButton === index ? 'fontsizeOnClick' : ''}`} onClick={() => handleClick(index)}>
+         <Button  key={index} variant="" className={`fontsize ${activeButton === index ? 'fontsizeOnClick' : ''} text-md-center d-md-block d-none`} onClick={() => handleClick(index)}>
             {buttonText}
          </Button>
            ))}

@@ -19,14 +19,14 @@ function LoginPassword(){
 
     return(
         <>
-            <Container style={{width: '43%'}}>
+            <Container className="custom-width">
                 <Row  className="mt-5 text-end">
                     <Col>
-                    <div className="text-center mt-5">
+                    <div className="text-center mt-5  d-none d-sm-block">
                              <img width={100} className="mx-1" sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt="" />
                              <img width={25} sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/logo.svg" alt="" />
                     </div>
-                    <div className="d-flex justify-content-end ">
+                    <div className="d-flex justify-content-end  d-none d-sm-block">
                              <Button onClick={handleVerifyPage} variant="">بازگشت
                              <TfiBackRight className="mx-1"/>
                              <Link to={'/verify'}></Link>

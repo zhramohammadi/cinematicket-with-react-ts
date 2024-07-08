@@ -20,10 +20,10 @@ function Verify(){
 
     return(
         <>
-        <Container style={{width: '45%'}}>
+        <Container className="custom-width">
             <Row className="mt-5 text-end">
                 <Col>
-                     <div className="text-center mt-5">
+                     <div className="text-center mt-5 d-none d-sm-block">
                              <img width={100} className="mx-1" sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt="" />
                              <img width={25} sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/logo.svg" alt="" />
                     </div>
@@ -35,18 +35,28 @@ function Verify(){
                     </div>
                     <div className="mt-4">
                         <h6>.کد فرستاده شده برای ()را وارد کنید</h6>
-                        <Form className="mt-5">
-                            <Form.Group>
-                                <Button onClick={handleHomePage}  variant="secondary" className="px-5 d-flex justify-content-end " style={{position:"absolute"}}>ادامه
+                         <div className="mt-4 d-flex justify-content-start">
+                                <Button onClick={handleHomePage}  variant="secondary" className="px-5 d-flex justify-content-end d-lg-block d-none" style={{position:"absolute"}}>ادامه
                                     <Link to={'/'}></Link>
                                 </Button>
-                                <Button  size="sm" variant="" className="cinema mt-2" style={{position:"absolute"}}> ارسال مجدد|
-                                    <Link to={'/forgetNumber'}></Link>
+                        </div>
+                        <div className="d-flex justify-content-center">
+                                <Button onClick={handleHomePage}  variant="secondary" className=" px-5 mt-5 d-lg-none d-xs-none" style={{position:"absolute"}}>ادامه
+                                    <Link to={'/'}></Link>
                                 </Button>
-                                <FormControl className="d-inline custom-input p-2 " dir="rtl" style={{ width: "55%",height:'45px' }} type="text" placeholder="کد تایید ..."/>
+                        </div>
+                        <div>
+                        <Form className=" d-lg-block d-none">
+                            <Form.Group>
+                                <FormControl className="d-inline  custom-input" dir="rtl" style={{width:'300px',height:'45px' }} type="text" placeholder="کد تایید ..."/>
                             </Form.Group>
                          </Form>
-
+                        <Form className=" d-flex justify-content-center d-lg-none d-xs-none">
+                            <Form.Group>
+                                <FormControl className="d-inline  custom-input" dir="rtl" style={{width:'300px',height:'45px' }} type="text" placeholder="کد تایید ..."/>
+                            </Form.Group>
+                         </Form>
+                         </div>
                          <hr className="mt-5 text-muted"/>
 
                          <div className="mt-4">
