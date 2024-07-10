@@ -92,13 +92,19 @@
 .carousel-images-left{
   position: absolute;
   width: 350px;
-  height: 403px;
+  
 }
+
+.carousel-backGround{
+  width: 100%;
+  height: 400px;
+
+}
+
 
 .carousel-images-right{
   position: absolute;
   width: 320px;
-  height: 400px;
   padding: 25px;
   border-radius: 10px;
 }
