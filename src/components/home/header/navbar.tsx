@@ -70,18 +70,18 @@ function Navbar (){
                 </NavbarBs.Collapse>
                 <Modal show={showModal} onHide={handleCloseModal} dir='rtl' size="lg" className="mt-5">
                     <Modal.Header>
-                    <RiCloseLargeFill className="closeButton"  onClick={handleCloseModal} />
+                    <RiCloseLargeFill className="closeButton pointer"  onClick={handleCloseModal} />
                         <Modal.Title className="text-muted m-2" >موقعیت مکانی</Modal.Title>
                         <Form className="mx-2 ">
                             <Form.Group>
-                            <Form.Control value={searchText} onChange={(e) => setSearchText(e.target.value)} className=" custom-input"  type="search" placeholder="جستجوی نام شهر ..."></Form.Control> 
+                            <Form.Control value={searchText} onChange={(e) => setSearchText(e.target.value)} className=" custom-input pointer"  type="search" placeholder="جستجوی نام شهر ..."></Form.Control> 
                             </Form.Group>
                        </Form>
                     </Modal.Header>
                     <Modal.Body className="custom-scrollbar mx-4" >
-                    <Row xl={4} lg={3} md={2} sm={1} xs={1}>
+                    <Row xl={4} lg={3} md={2} sm={1} xs={1} onClick={handleCloseModal}>
                      {filteredCity.map((city) => (
-                         <Col onClick={()=>handleCity(city.title)} className="mt-2  custom-button text-muted" key={city.id}>{city.title}</Col>
+                         <Col onClick={()=>handleCity(city.title)} className="mt-2  custom-button text-muted pointer" key={city.id}>{city.title}</Col>
                         ))}
                      </Row>
                         
@@ -105,8 +105,8 @@ function Navbar (){
                         سینما
                     </Button>
                         <Form className="mt-1  d-md-block d-none">
-                            <Form.Group>
-                            <Form.Control value={searchText} onChange={(e) => setSearchText(e.target.value)} style={{ width: "100%" }} className=" custom-input "  type="search" placeholder="جستجوی فیلم.سینما کارگردان.بازیگر و..."></Form.Control> 
+                            <Form.Group >
+                            <Form.Control  style={{ width: "100%" }} className=" custom-input pointer"  type="search" placeholder="جستجوی فیلم.سینما کارگردان.بازیگر و..."></Form.Control> 
                             </Form.Group>
                        </Form>
                 </Nav> 
