@@ -43,6 +43,10 @@
     background-color: #f1efef;
   }
 
+  .pointer {
+    cursor: pointer;
+  }
+
 
   .cinema{
     font-size: 12px;
@@ -89,24 +93,44 @@
   background-color: #f7f7f8;
 }
 
-.carousel-images-left{
-  position: absolute;
-  width: 350px;
-  
+
+
+@media (max-width: 760px) {
+    .custom-width {
+        width:100%;
+    }
 }
+
+@media (max-width: 578px) {
+    .custom-width {
+        position: absolute;
+        top: 10%;
+    }
+    .custom-width-input{
+      width: 80%;
+    }
+}
+/*carousel*/
 
 .carousel-backGround{
   width: 100%;
-  height: 400px;
+  height: 410px;
+  padding: 15px;
+  border-radius: 35px;
 
 }
-
-
+.carousel-images-left{
+  position: absolute;
+  width: 350px;
+  top: 14px;
+  height: 380px;
+  
+}
 .carousel-images-right{
   position: absolute;
   width: 320px;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .Description{
@@ -126,18 +150,26 @@
   font-size: 12px;
 }
 
-@media (max-width: 760px) {
-    .custom-width {
-        width:100%;
-    }
-}
-
 @media (max-width: 578px) {
-    .custom-width {
+  .opacity{
+    opacity: 0;
+  }
+    .imageSize{
         position: absolute;
-        top: 10%;
+        width: 100%;
+        height: 400px;
+        padding:0;
+        border-radius: 15px;
+        filter: blur(2px);
+    
     }
-    .custom-width-input{
-      width: 80%;
+    .caption{
+      position: relative;
+      top: 50px;
+      font-size: 13px;
+      width: 100%;
     }
-}
+    
+  }
+  /*end carousel*/
+  

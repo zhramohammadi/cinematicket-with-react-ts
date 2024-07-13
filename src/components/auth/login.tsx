@@ -20,7 +20,7 @@ function Login(){
 
     return(
         <>
-            <Container className="custom-width ">
+            <Container className="custom-width" style={{width:'55%'}}>
                 <Row className=" mt-5 text-end">
                         <div className="text-center mt-5 d-none d-sm-block">
                              <img width={100} className="mx-1" sizes="sm" src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt="" />

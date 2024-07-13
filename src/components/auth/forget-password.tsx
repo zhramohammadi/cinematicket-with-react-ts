@@ -23,7 +23,7 @@ function ForgetPassword(){
     }
     return(
         <>
-        <Container  className="custom-width">
+        <Container  className="custom-width"style={{width:'55%'}}>
             <Row className="mt-5 text-end">
                 <Col>
                 <div className="text-center mt-5  d-none d-sm-block">
