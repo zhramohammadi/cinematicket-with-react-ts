@@ -173,3 +173,24 @@
   }
   /*end carousel*/
   
+
+  /*sales*/
+
+.sales-img{
+  width: 70px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+.amount-font-size{
+  font-size: 12px;
+}
+.director-font-size{
+  font-size: 10px;
+}
+
+.title-font-size{
+  font-size: 13px;
+}
+
+  /*end sales*/
