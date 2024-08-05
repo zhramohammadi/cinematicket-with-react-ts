@@ -1,6 +1,7 @@
 
-import { Container,Col,Row } from "react-bootstrap";
+import { Container,Col,Row,Button } from "react-bootstrap";
 import { salesTable } from "../../../data/salesChart";
+import { GoChevronDown } from "react-icons/go";
 
 function sales(){
 
@@ -10,7 +11,7 @@ function sales(){
 
     return(
         <>
-            <Container style={{width:"28%"}} className="d-inline-block mx-3 d-lg-blok d-md-block d-none">
+            <Container style={{width:"25%"}} className="d-inline-block mx-3 d-lg-blok d-md-block d-none">
                 <div className="mt-4 ">
                 <div>
                     <div  className="d-flex justify-content-between text-muted">
@@ -44,7 +45,13 @@ function sales(){
                             </div>
                              <hr className="mt-2 text-muted"/>
                         </Row>
-                    ))};
+                    ))}
+                    <div className="d-flex  justify-content-center">
+                        <Button className="text-danger mt-1 mb-4" variant="none">
+                            <GoChevronDown className="mx-2"/>
+                            مشاهده کامل جدول فروش
+                        </Button>
+                    </div>
                 </Col>
 
                 </div>
