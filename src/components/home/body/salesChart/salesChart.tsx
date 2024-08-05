@@ -1,7 +1,7 @@
 
-import { Container,Col,Row,Button } from "react-bootstrap";
+import { Container,Col,Row } from "react-bootstrap";
 import { salesTable } from "../../../data/salesChart";
-import { GoChevronDown } from "react-icons/go";
+
 function sales(){
 
     function formatPrice (number:number){
@@ -10,7 +10,7 @@ function sales(){
 
     return(
         <>
-            <Container style={{width:"23%"}} className="d-inline-block mx-3 d-lg-blok d-md-block d-none">
+            <Container style={{width:"28%"}} className="d-inline-block mx-3 d-lg-blok d-md-block d-none">
                 <div className="mt-4 ">
                 <div>
                     <div  className="d-flex justify-content-between text-muted">
@@ -44,19 +44,13 @@ function sales(){
                             </div>
                              <hr className="mt-2 text-muted"/>
                         </Row>
-                    ))}
-                    <div>
-                        <Button className="text-center text-danger mt-1 mb-5" variant="none">
-                            <GoChevronDown  className="mx-2"/>
-                            شماهده کامل جدول فروش
-                        </Button>
-                    </div>
+                    ))};
                 </Col>
 
                 </div>
             </Container>
         </>
     )
-}
+};
 
 export default sales;
