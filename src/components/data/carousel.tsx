@@ -86,6 +86,6 @@ function getcarouselData (id:number) {
     }else{
         throw new Error (`carousel whit id ${id} not found`)
     }
-};
+}
 
 export {carouselItem,getcarouselData};

@@ -54,7 +54,7 @@ function carousel(){
                 </div>
          
           <CarouselCaption >
-            <div className="text-end mb-5 col-lg-10 col-md-8 col-sm-5 caption">
+            <div className="text-end mb-5 col-lg-10 col-md-8 col-sm-5 caption ">
               <div className="mb-4 ">
                 <h4>{item.caption}</h4>
               </div>
