@@ -11,7 +11,7 @@ function sales(){
 
     return(
         <>
-            <Container style={{width:"25%"}} className="d-inline-block mx-3 d-lg-blok d-md-block d-none">
+            <Container  className="d-inline-block mx-4 d-lg-blok d-md-block d-none ">
                 <div className="mt-4 ">
                 <div>
                     <div  className="d-flex justify-content-between text-muted">
@@ -35,12 +35,12 @@ function sales(){
                                 <div className=" mt-3">
                                     <div className="d-flex">
                                         <p className="text-muted  amount-font-size">{formatPrice(sales.amount)}</p>
-                                        <p className="title-font-size d-lg-block d-none">{sales.title}</p >
+                                        <p className="title-font-size">{sales.title}</p >
                                     </div>
                                     <p className="text-end director-font-size">{sales.director}</p>
-                                </div>    
+                                </div>
                                 <div>
-                                    <img className="sales-img mx-2" src={sales.img} alt={sales.title} />    
+                                    <img className="sales-img mx-2" src={sales.img} alt={sales.title} />
                                 </div>
                             </div>
                              <hr className="mt-2 text-muted"/>
