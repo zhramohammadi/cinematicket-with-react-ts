@@ -6,14 +6,14 @@ import { LuUser } from "react-icons/lu";
 function iranianMovie(){
     return(
         <>
-            <div className="d-flex justify-content-between m-2 ">
+            <div className="d-flex justify-content-between m-2 mt-lg-5">
                 <div className="button-size">
-                    <Button size={'sm'} variant={'none'}>
+                    <Button className='border-0' size={'sm'} variant={'none'}>
                         <GoChevronLeft className="mx-1"/>
                         مشاهده همه
                     </Button>
                 </div>
-                <p className="mx-lg-3">فیلم ایرانی</p>
+                <p className="mx-lg-3 section" id={'iranianMovies'}>فیلم ایرانی</p>
             </div>
 
             <Row xs={3} md={3} lg={4} xl={5} className="mx-1">
@@ -26,25 +26,27 @@ function iranianMovie(){
                                 alt={moviesList.title}
                             />
                             <div className="caption-poster">
-                                <div className="d-flex justify-content-between">
-                        <span className="d-inline-block p-2">
-                            {moviesList.viewer} <LuUser className="m-1"/>
-                        </span>
-                                    <span className="d-inline-block p-2">
-                            {moviesList.rating} <GoHeartFill className="m-1 text-danger"/>
-                        </span>
+                                <div className='d-lg-block d-md-block d-none'>
+                                    <div className="d-flex justify-content-between">
+                                        <span className="d-inline-block p-2">
+                                            {moviesList.viewer} <LuUser className="m-1"/>
+                                        </span>
+                                            <span className="d-inline-block p-2">
+                                            {moviesList.rating} <GoHeartFill className="m-1 text-danger"/>
+                                        </span>
+                                    </div>
+                                    <p className="text-center">کارگردان: {moviesList.director}</p>
+                                    </div>
                                 </div>
-                                <p className="text-center">کارگردان: {moviesList.director}</p>
-                            </div>
                         </div>
-                        <div className="text-center mt-1 text-muted title-size">
+                            <div className="text-center mt-2 text-muted title-size">
                             <p>{moviesList.title}</p>
-                        </div>
+                            </div>
                     </Col>
                 ))}
 
                 <div className="col-12 d-lg-none d-md-none d-block">
-                    <Button className="w-100" variant={'btn btn-outline-secondary'}>
+                    <Button className="w-100 border-0" variant={'btn btn-outline-secondary'}>
                         <GoChevronLeft className="m-1"/>
                         مشاهده همه
                     </Button>
