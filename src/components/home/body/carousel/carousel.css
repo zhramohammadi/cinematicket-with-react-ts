@@ -1,0 +1,60 @@
+/*carousel*/
+
+.carousel-backGround{
+    width: 100%;
+    height: 410px;
+    padding: 15px;
+    border-radius: 35px;
+}
+.carousel-images-left{
+    position: absolute;
+    width: 350px;
+    top: 14px;
+    height: 380px;
+
+}
+.carousel-images-right{
+    position: absolute;
+    width: 320px;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+.Description{
+    background-color: #48463d;
+    color: white;
+    padding: 3px;
+    border-radius: 7px;
+    margin: 2px;
+    font-size: 12px;
+}
+.DescriptionTime{
+    background-color: #48463d;
+    color: white;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+@media (max-width: 578px) {
+    .opacity{
+        opacity: 0;
+    }
+    .imageSize{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        padding:0;
+        border-radius: 15px;
+        filter: blur(2px);
+
+    }
+    .caption{
+        position: relative;
+        top: 50px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+}
