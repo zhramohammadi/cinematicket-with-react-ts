@@ -4,13 +4,12 @@ import Header from './header/navbar';
 import Carousel from './body/carousel/carousel';
 import Sales from './body/salesChart/salesChart';
 import Categories from "./body/categories/categories.tsx";
+import Footer from './footer/footer.tsx';
 function Home(){
     return(
         <>
             <Header/>
             <Carousel/>
-
-
             <Row>
                 <Col lg={3} md={5} >
                     <Sales />
@@ -19,6 +18,7 @@ function Home(){
                     <Categories />
                 </Col>
             </Row>
+            <Footer/>
         </>
     )
 }
