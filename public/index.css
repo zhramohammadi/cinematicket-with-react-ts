@@ -3,3 +3,8 @@
     src: url('./fonts/Vazirmatn[wght].ttf');
 }
 
+body{
+    width: 100%;
+    position: absolute;
+    top: 16%;
+}
