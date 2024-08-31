@@ -1,4 +1,12 @@
-const kidsAndTeenager = [
+interface KidsAndTeenager {
+    id:number,
+    title:string,
+    director:string,
+    rating:number,
+    viewer:number,
+    poster:string,
+}
+const kidsAndTeenager:KidsAndTeenager[] = [
     {
         id: 1,
         title: " کتابخورها ",
