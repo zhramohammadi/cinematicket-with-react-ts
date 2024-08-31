@@ -1,5 +1,12 @@
-
-const iraninan  = [
+interface IraninanMovie {
+  id:number,
+  title:string,
+  director:string,
+  rating:number,
+  viewer:number,
+  poster:string,
+}
+const iraninan:IraninanMovie[]  = [
     {
         id: 1,
         title: "سال گربه  ",

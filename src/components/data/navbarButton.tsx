@@ -1,5 +1,8 @@
-
-const navbarButton = [
+interface NavbarButton{
+    id:string,
+    buttonName:string
+}
+const navbarButton:NavbarButton[] = [
     {
         id: 'iranianMovies',
         buttonName:'فیلم ایرانی'

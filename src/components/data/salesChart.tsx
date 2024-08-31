@@ -1,6 +1,12 @@
+interface SalesTable{
+    id: number;
+    title: string;
+    director:string,
+    amount:number,
+    img:string,
+}
 
-
-const salesTable = [
+const salesTable:SalesTable[] = [
     {
         id :1 ,
         title: "تمساح خونی ",

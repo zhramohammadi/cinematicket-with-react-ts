@@ -1,4 +1,13 @@
-const artAndExperience = [
+interface ArtAndExperience {
+    id:number,
+    title:string,
+    director:string,
+    rating:number,
+    viewer:number,
+    poster:string,
+}
+
+const artAndExperience :ArtAndExperience[] = [
     {
         id: 1,
         title: " مهمانی سایه ها ",

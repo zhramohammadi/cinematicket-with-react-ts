@@ -1,4 +1,12 @@
-const foreignFilm = [
+interface ForeignFilm {
+    id:number,
+    title:string,
+    director:string,
+    rating:number,
+    viewer:number,
+    poster:string,
+}
+const foreignFilm:ForeignFilm[] = [
     {
         id: 1,
         title: " درون و بیرون ",

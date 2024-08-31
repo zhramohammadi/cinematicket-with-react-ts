@@ -1,5 +1,19 @@
+interface Movie {
+    id: number;
+    title?: string;
+    director?: string;
+    rating?: number;
+    duration?: string;
+    genre?: string;
+    description?: string;
+    images: {
+        imgBack: string;
+        imgBackSm: string;
+        posterimg?: string;
+    };
+}
 
-const basicInfo = [
+const basicInfo:Movie[] = [
         {
             id:1,
             title :"تگزاس3 ",

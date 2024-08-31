@@ -1,6 +1,20 @@
+interface CarouselItems {
+    id:number,
+    caption:string,
+    director:string,
+    votes:number,
+    ating:number,
+    duration:string,
+    genre:string[],
+    Description:string,
+    images:{
+        left:string,
+        right:string,
+        background:string,
+    }
+}
 
-
-const carouselItem = [
+const carouselItem:CarouselItems[] = [
     {
         id: 1,       
         caption :"تمساح خونی",

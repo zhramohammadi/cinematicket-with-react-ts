@@ -1,4 +1,12 @@
-const theater = [
+interface Theater {
+    id:number,
+    title:string,
+    director:string,
+    rating:number,
+    viewer:number,
+    poster:string,
+}
+const theater:Theater[] = [
     {
         id: 1,
         title: " پپرونی برای دیکتاتور ",

@@ -1,4 +1,12 @@
-const comedyTheater = [
+interface ComedyTheater {
+    id:number,
+    title:string,
+    director:string,
+    rating:number,
+    viewer:number,
+    poster:string,
+}
+const comedyTheater :ComedyTheater[] = [
     {
         id: 1,
         title: "کمدی هوو ",
