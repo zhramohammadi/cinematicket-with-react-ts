@@ -12,31 +12,31 @@ function foreignFilmBanner(){
                     <Col>
                         <img
                             className="imgBack d-lg-block d-none"
-                            src={movie.images.imgBack}
+                            src={movie?.images?.imgBack}
                             alt="background"
                         />
                         <img
                             className="poster-back d-lg-block d-none mx-3"
-                            src={movie.images.posterimg}
+                            src={movie?.images?.posterimg}
                             alt="poster"
                         />
                         <img
                             className="d-lg-none d-block img-back-sm"
-                            src={movie.images.imgBackSm}
+                            src={movie?.images?.imgBackSm}
                             alt="background"
                         />
                         <div className="caption-movie mt-lg-5 text-end col-lg-9 col-11 ">
-                            <h6>{movie.title}</h6>
-                            <p className="mt-lg-3 mt-1">{movie.director}</p>
+                            <h6>{movie?.title}</h6>
+                            <p className="mt-lg-3 mt-1">{movie?.director}</p>
                             <div className="mt-lg-3">
                     <span className="DescriptionTime d-inline-block">
-                        {movie.rating} <GoHeartFill className="m-1 text-danger" />
+                        {movie?.rating} <GoHeartFill className="m-1 text-danger" />
                     </span>
-                                <span className="DescriptionTime d-lg-inline-block d-none">{movie.duration}</span>
-                                <span className="DescriptionTime d-lg-inline-block d-none">{movie.genre}</span>
+                                <span className="DescriptionTime d-lg-inline-block d-none">{movie?.duration}</span>
+                                <span className="DescriptionTime d-lg-inline-block d-none">{movie?.genre}</span>
                             </div>
                             <div className="mt-2 d-lg-block d-none">
-                                <p className="font-size">{movie.description}</p>
+                                <p className="font-size">{movie?.description}</p>
                             </div>
                             <div className="d-flex justify-content-lg-start justify-content-end col-9 mx-5">
                                 <Button className="p-1" variant="danger">

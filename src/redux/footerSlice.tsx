@@ -1,7 +1,7 @@
-import {createSlice, payloadAction} from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 interface  FooterState{
-    activeButton : 'string';
+    activeButton:string,
 }
 
 const initialState : FooterState = {
@@ -12,7 +12,7 @@ const footerSlice = createSlice({
     name: 'footer',
     initialState,
     reducers:{
-        setActiveButton : (state,action : payloadAction<'string'>)=> {
+        setActiveButton : (state,action : PayloadAction<'string'>)=> {
             state.activeButton = action.payload;
         }
     }

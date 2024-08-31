@@ -10,12 +10,12 @@ function theaterBanner(){
                 <Col>
                     <img
                         className="imgBack d-lg-block d-none"
-                        src={movie.images.imgBack}
+                        src={movie?.images?.imgBack}
                         alt="background"
                     />
                     <img
                         className="d-lg-none d-block img-back-sm"
-                        src={movie.images.imgBackSm}
+                        src={movie?.images?.imgBackSm}
                         alt="background"
                     />
                 </Col>
