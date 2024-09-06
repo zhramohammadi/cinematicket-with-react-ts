@@ -1,6 +1,6 @@
 import './profileUpload.css'
-import React, { useState } from 'react';
-
+import  { useState } from 'react';
+import { IoCameraOutline } from "react-icons/io5";
 function profileUpload(){
     const[selectFile, setSelectFile] =useState(null);
     const[preview, setPreview] =useState(null);
@@ -33,7 +33,8 @@ function profileUpload(){
                             <img src={preview} alt="Profile" className="profile-image" />
                         ) : (
                             <div className="upload-placeholder">
-                                <span>+</span>
+                                <img  src='images/profileImg/profile-mine.svg' alt="Profile Mine" className='mine-profile'/>
+                                <span className='mine-profile-icon'><IoCameraOutline /></span>
                             </div>
                         )}
                         <div className="overlay">
