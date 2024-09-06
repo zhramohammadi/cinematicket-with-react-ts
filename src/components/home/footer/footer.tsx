@@ -36,7 +36,7 @@ function Footer (){
                         <Button
                             key={button.name}
                             variant="none"
-                            className={`d-flex flex-column align-items-center border-0 ${
+                            className={`d-flex flex-column align-items-center border-0  ${
                                 activeButton === button.name ? 'text-danger' : ''
                             }`}
                             onClick={() => dispatch(setActiveButton(button.name))}

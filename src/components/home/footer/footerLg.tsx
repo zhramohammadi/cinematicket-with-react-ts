@@ -12,7 +12,7 @@ function FooterLg(){
         <>
             <footer className='footer fixed-bottom d-lg-block d-md-block d-none '>
                 <div className='d-flex justify-content-between mx-5 mt-2'>
-                    <div className='d-flex gap-3'>
+                    <div className='d-flex gap-3 '>
                         <a className='links' href='mailto:support@cinematicket.org'>
                             <MdEmail/>
                         </a>
@@ -33,10 +33,10 @@ function FooterLg(){
                         </a>
                     </div>
 
-                    <div className='d-flex mx-3'>
+                    <div className='d-flex mx-2 '>
                         {footerButton.map((button) => (
-                            <div key={button.id} className='item mb-2'>
-                                <Button className='text-light border-0' size='sm' variant='none'>
+                            <div key={button.id} className='item mb-2 '>
+                                <Button className='text-light border-0 footer-size' size='sm' variant='none'>
                                     {button.buttonName}
                                 </Button>
                             </div>
