@@ -23,7 +23,11 @@ function Header (){
     function handleLoginPage() {
         navigate('/Login');
     }
-    return(
+    function cinemaPage() {
+        navigate('/Cinema');
+    }
+
+        return(
         <>
                 <NavbarBs className="border-bottom bg-white">
                     <Container fluid>
@@ -86,7 +90,7 @@ function Header (){
                                 <img width={70} sizes="sm"
                                      src="https://cinematicket.org/v3.30.13/assets/images/typography_dark.svg" alt=""/>
                             </Button>
-                            <Button variant="" className="cinema  d-md-block d-none">
+                            <Button onClick={cinemaPage} variant="" className="cinema  d-md-block d-none">
                                 <BsPlayCircle className='mx-1'/>
                                 سینما
                             </Button>

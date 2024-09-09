@@ -1,0 +1,23 @@
+
+.sideBox{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 7%;
+    height: 100%;
+}
+.buttonstyle{
+    padding: 10px;
+}
+.buttonstyle:hover {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+.main{
+    background-color: #f5f5f5;
+}
+.dashboard-size{
+    font-size: 14px  !important;
+}

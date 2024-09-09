@@ -1,0 +1,61 @@
+.wallet {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+p{
+    font-size: 14px;
+}
+.box-item {
+    border-radius: 10px;
+}
+.wallet-inventory{
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #f5f5f5;
+}
+
+.inventory{
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: #d6e5ff;
+    color:#73a2fb ;
+    font-size: 14px;
+}
+input{
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+.inventory-increase{
+    border: 2px #f5f5f5 solid;
+    border-radius: 10px;
+    margin: 5px 2px;
+}
+
+.inventory-increase:hover{
+    background-color: #f5f5f5;
+}
+
+.active-inventory-increase{
+    background-color: #f5f5f5;
+}
+
+.credit-increase{
+    border: 3px #f5f5f5 solid;
+    border-radius: 10px;
+
+    padding: 2px 40px;
+}
+.active-credit-increase{
+    border: 1px red solid;
+    border-radius: 10px;
+    padding: 2px 40px;
+}
+
+.active-credit-increase:hover{
+    background-color: #fff7f8;
+}
+.input-size{
+    font-size: 14px;
+}
