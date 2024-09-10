@@ -6,8 +6,6 @@
 .filter-button:hover{
     background-color: #e7e7e7;
 }
-
-
 .filter-options {
     display: flex;
     width: 60px;
@@ -17,20 +15,44 @@
     cursor: pointer;
     height: 100px;
 }
-
 .filter-options:hover {
     background-color: #e0e0e0;
     height:100px;
 
 }
-
 .button-list{
-    font-size:8px !important;
+    font-size:14px !important;
     padding: 10px;
     height:60px;
 }
-
 .active-button{
     background-color: #f0f0f0;
     border-radius: 10px;
+}
+
+
+/*            cinemaItems                 */
+
+.cinema-cart{
+    background-color: white;
+    cursor: pointer;
+}
+.cinema-cart:hover{
+    background-color: #f0f0f0;
+}
+.cinema-image{
+    width: 300px;
+    height: 140px;
+}
+.rating{
+    font-size: 12px;
+    border-radius: 30px;
+}
+.voting{
+    font-size: 14px;
+}
+.icon{
+    padding: 1px 8px;
+    border-radius: 10px;
+    background-color:#e0e0e0 ;
 }
